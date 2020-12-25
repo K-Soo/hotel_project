@@ -8,7 +8,7 @@
   
  - 프레임워크 
    - React
-   - redux (react-redux)
+   - redux (react-redux),redux-Saga
    - styled-components
    - express
    
