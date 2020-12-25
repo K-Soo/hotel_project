@@ -7,9 +7,11 @@
   
  - 프레임워크 
    - React
- 
+   - redux (react-redux)
+   - styled-components
+   
 - 클라우드
    - AWS
    
 - DATABASE 
-  - mongoDB /mongoose
+  - mongoDB / mongoose
