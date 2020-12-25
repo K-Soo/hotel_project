@@ -12,4 +12,4 @@
    - AWS
    
 - DATABASE 
-  - mongDB
+  - mongoDB /mongoose
