@@ -56,7 +56,7 @@ const Main = styled.div`
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20%;
+    bottom: 30%;
     button {
       width: 100%;
     }
