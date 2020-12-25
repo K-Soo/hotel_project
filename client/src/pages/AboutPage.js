@@ -27,16 +27,6 @@ const AboutPage = ({ match }) => {
           <Footer />
         </>
       )}
-      {category === 'concept' && (
-        <>
-          <Helmet>
-            <title>Corinthia&nbsp;{text}</title>
-          </Helmet>
-          <Header />
-          <Concept />
-          <Footer />
-        </>
-      )}
 
       {category === 'location' && (
         <>

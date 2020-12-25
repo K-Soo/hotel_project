@@ -150,9 +150,6 @@ const CategoryNav = ({ history, open }) => {
                   <li>
                     <Link to='/about/location'>위치</Link>
                   </li>
-                  <li>
-                    <Link to='/about/concept'>컨셉</Link>
-                  </li>
                 </ul>
               </article>
               <NavImage>
