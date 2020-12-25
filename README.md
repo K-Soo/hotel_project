@@ -15,3 +15,7 @@
    
 - DATABASE 
   - mongoDB / mongoose
+  
+ # 주요기능
+  사용자가 호텔 사이트내에서 예약 및 예약 확인이 가능합니다.
+  
