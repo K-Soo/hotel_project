@@ -10,6 +10,7 @@
    - React
    - redux (react-redux)
    - styled-components
+   - express
    
 - 클라우드
    - AWS
