@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-
+import '@babel/polyfill';
 const UsersSchema = new mongoose.Schema(
   {
     userId: {
