@@ -85,6 +85,7 @@ const CheckReserve = ({ checkReserve }) => {
             </tr>
           </thead>
           {checkReserve &&
+            Array.isArray(checkReserve) &&
             checkReserve.map(
               ({ bookingID, register_date, detail, roomType, TotalPrice }, index) => (
                 <tbody key={bookingID}>
@@ -108,7 +109,7 @@ const CheckReserve = ({ checkReserve }) => {
               )
             )}
         </table>
-        {!checkReserve && <div>예약내역이없습니다.</div>}
+        {(checkReserve && Array.isArray(checkReserve)) || <div>예약내역이없습니다.</div>}
       </Table>
     </>
   );

@@ -9,7 +9,6 @@ const CheckReserveContainer = () => {
     checkReserve: checkReserve.userReserve,
   }));
   const dispatch = useDispatch();
-
   useEffect(() => {
     if (user) {
       const { _id } = user;

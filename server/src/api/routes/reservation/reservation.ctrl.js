@@ -37,7 +37,7 @@ export const getMemberBookings = async (req, res) => {
   const { _id } = req.body;
   try {
     const exist = await Booking.find({ 'user._id': _id });
-    if (!exist.length) return res.status(401).send('예약내역이 없습니다.');
+    if (!exist.length) return res.send('예약내역이 없습니다.');
     res.json(exist);
   } catch (error) {
     res.send('잘못된 유저정보');
