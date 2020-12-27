@@ -68,8 +68,12 @@ const RoomPrice = styled.div`
   }
 `;
 const PriceButton = styled(Button)`
-  height: 40px;
+  padding: 0;
   flex-grow: 1;
+  a {
+    line-height: 30px;
+    display: block;
+  }
 `;
 const RoomInfo = styled.div`
   position: relative;
@@ -267,7 +271,10 @@ const Main = () => {
                     <span>KRW</span>
                     <strong>&nbsp;{price}&nbsp;~</strong>
                   </div>
-                  <PriceButton>요금 조회</PriceButton>
+
+                  <PriceButton>
+                    <Link to='/reservation/main'>요금 조회</Link>
+                  </PriceButton>
                 </RoomPrice>
               </ListItem>
             )
