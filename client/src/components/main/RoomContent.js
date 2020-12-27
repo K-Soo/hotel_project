@@ -12,6 +12,9 @@ const RoomContentBlock = styled.div`
   padding-top: 50px;
 `;
 
+const ImageBlock = styled.div`
+  overflow: hidden;
+`;
 const CardItem = styled.div`
   img {
     width: 100%;
@@ -19,6 +22,7 @@ const CardItem = styled.div`
     padding: 0 15px;
   }
 `;
+
 const Title = styled.div`
   h1 {
     text-align: center;
@@ -47,35 +51,36 @@ const roomImage = [
   { src: 'rooms/suite/suitePremier/room1.jpg', alt: '스위트프리미어1' },
   { src: 'rooms/suite/royalSuite/room1.jpg', alt: '로얄스위트1' },
 ];
-const RoomContent = () => {
-  const settings = {
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
-    cssEase: 'linear',
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-    ],
-  };
 
+const settings = {
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  cssEase: 'linear',
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+  ],
+};
+
+const RoomContent = () => {
   return (
     <RoomContentBlock>
       <Title>
@@ -85,13 +90,15 @@ const RoomContent = () => {
         <Link to='rooms/main'>자세히 보기</Link>
         <BsChevronDoubleRight className='icon' />
       </StyledLink>
-      <Slider {...settings}>
-        {roomImage.map(img => (
-          <CardItem key={img.src}>
-            <img src={require(`lib/images/${img.src}`)} alt={`${img.alt}`} />
-          </CardItem>
-        ))}
-      </Slider>
+      <ImageBlock>
+        <Slider {...settings}>
+          {roomImage.map(img => (
+            <CardItem key={img.src}>
+              <img src={require(`lib/images/${img.src}`)} alt={`${img.alt}`} />
+            </CardItem>
+          ))}
+        </Slider>
+      </ImageBlock>
     </RoomContentBlock>
   );
 };
