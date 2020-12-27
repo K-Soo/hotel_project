@@ -15,7 +15,7 @@ const Wrap = styled.div`
   `}
 `;
 const Block = styled.div`
-  margin-bottom: 300px;
+  margin-bottom: 350px;
 `;
 const items = [
   { to: '/', label: '홈' },

@@ -42,6 +42,7 @@ const ContentBox = styled.div`
     width: 1024px;
     margin: 0 auto;
     padding: 5px;
+    padding: 0 30px;
     text-align: left;
     article {
       h3 {

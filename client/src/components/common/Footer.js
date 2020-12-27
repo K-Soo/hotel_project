@@ -6,7 +6,11 @@ import { AiFillGithub } from 'react-icons/ai';
 const LogoBlock = styled.section`
   background: #fff;
   border-top: 1px solid #ccc;
-  position: relative;
+  section {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
   article {
     display: flex;
     position: relative;
@@ -32,21 +36,6 @@ const LogoBlock = styled.section`
       display:none;
     `}
   }
-  .icon {
-    background: url(${require('lib/images/sprites.png')}) -249px -72px;
-    width: 167px;
-    height: 43px;
-    right: 10px;
-    top: 10px;
-    text-align: right;
-    position: absolute;
-    cursor: pointer;
-    ${({ theme }) => theme.Tablet`
-    position: sticky;
-    margin: 0 auto;
-    display: block;
-    `}
-  }
   nav {
     text-align: right;
     position: absolute;
@@ -68,9 +57,6 @@ const Container = styled.section`
   align-items: center;
   padding: 30px;
   flex-wrap: wrap;
-  .inner {
-    /* margin: 0 auto; */
-  }
   .hotel {
     background: url(${require('lib/images/sprites.png')}) -5px -157px;
     width: 123px;
@@ -125,20 +111,22 @@ const Footer = () => {
   return (
     <>
       <LogoBlock>
-        <article>
-          <i className='dimontonate' />
-          <i className='face' />
-          <i className='hermes' />
-        </article>
-        <nav>
-          <a
-            href='https://github.com/K-Soo/hotel_project'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <AiFillGithub size='3rem' />
-          </a>
-        </nav>
+        <section>
+          <article>
+            <i className='dimontonate' />
+            <i className='face' />
+            <i className='hermes' />
+          </article>
+          <nav>
+            <a
+              href='https://github.com/K-Soo/hotel_project'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <AiFillGithub size='3rem' />
+            </a>
+          </nav>
+        </section>
       </LogoBlock>
       <Container>
         <i className='hotel' />
