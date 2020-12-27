@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { AiFillGithub } from 'react-icons/ai';
 
 const LogoBlock = styled.section`
   background: #fff;
@@ -44,6 +45,17 @@ const LogoBlock = styled.section`
     position: sticky;
     margin: 0 auto;
     display: block;
+    `}
+  }
+  nav {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    ${({ theme }) => theme.Tablet`
+    position: sticky;
+    // margin: 0 auto;
+    text-align:center
     `}
   }
 `;
@@ -118,7 +130,15 @@ const Footer = () => {
           <i className='face' />
           <i className='hermes' />
         </article>
-        <i className='icon' />
+        <nav>
+          <a
+            href='https://github.com/K-Soo/hotel_project'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <AiFillGithub size='3rem' />
+          </a>
+        </nav>
       </LogoBlock>
       <Container>
         <i className='hotel' />
