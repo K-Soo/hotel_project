@@ -1,7 +1,7 @@
 # Portfolio	
 - 반응형 웹사이트
 - 개발기간 : 2020-09 ~ 2020-12(3개월)
-- webpage : http://3.18.66.154/
+- Site : http://3.18.66.154/
 # 설치 및 시작
   in the main folder
   ```
