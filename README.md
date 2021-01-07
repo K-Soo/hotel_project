@@ -1,5 +1,4 @@
 ![title 755eeb22](https://user-images.githubusercontent.com/59819898/103851867-16ce7600-50ee-11eb-8968-1f3a743f1ef1.png)
-![diagram 2ec3431b](https://user-images.githubusercontent.com/59819898/103851797-e981c800-50ed-11eb-87d8-fc5cc88fb3e5.png)
 # Portfolio	
 - 개인 프로젝트 호텔사이트
 - 개발기간 :  2020/09 ~ 2020/12
@@ -47,6 +46,7 @@
  
  
  # 설명
+![diagram 2ec3431b](https://user-images.githubusercontent.com/59819898/103851797-e981c800-50ed-11eb-87d8-fc5cc88fb3e5.png)
  
  ### front-end
   - 중복되는 css code는 styled components를 적극사용 코드재사용율을 높였습니다.
@@ -61,6 +61,7 @@
   - 사용자가 예약시 mongoose 쿼리를 이용하여 예약내역을 가져옵니다.
   - bcrypt모듈을 사용하여 회원가입시 해쉬함수를 더해 비밀번호를 암호화해서 데이터베이스에 저장.  
   - 데이터 요청시 jsonwebtoken모듈을 사용하여 토큰기반인증을구현.
+  
 
    
   
