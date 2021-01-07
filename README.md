@@ -1,7 +1,5 @@
-![title 755eeb22](https://user-images.githubusercontent.com/59819898/103851867-16ce7600-50ee-11eb-8968-1f3a743f1ef1.png)
 # Portfolio	
-- 개인 프로젝트 호텔사이트
-- 개발기간 :  2020/09 ~ 2020/12
+![title 755eeb22](https://user-images.githubusercontent.com/59819898/103851867-16ce7600-50ee-11eb-8968-1f3a743f1ef1.png)
 
 # 설치 및 시작
   in the main folder
