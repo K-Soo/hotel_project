@@ -19,25 +19,31 @@
   ```
   npm run dev
   ```
+# Test Account
+```
+Admin
+ ID : admin
+ password : 123456
+ 
+PayPal
+ID : 
+
+
+```
 
 - 언어
   - Javascript / node.js
-  
  - etc. 
    - React
    - redux (react-redux),redux-Saga
    - styled-components
    - express
-
  - API
     - kakao map
-    
 - 클라우드 서버
    - AWS EC2
-   
 - DATABASE 
   - mongoDB / mongoose
-  
 - 개발환경
   - MAC OS
 
