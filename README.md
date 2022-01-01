@@ -19,17 +19,7 @@
   ```
   npm run dev
   ```
-# Test Account
-```
-Admin
- ID : admin
- password : 123456
- 
-PayPal
-ID : 
 
-
-```
 
 - 언어
   - Javascript / node.js
